@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+	<head>
+	<title>Richard Tirta's Social APIs Prototype</title>
+	<%= stylesheet_link_tag "site.css" %>
+
+	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+	<%= javascript_include_tag "app-js" %>
+	</head>
+	<body>
+		<!-- FB LOAD API -->
+	<div id="fb-root"></div>
+
+	<script type="text/javascript">
+		var	fb_appId      = '360431780729831'; // App ID
+		var fb_channelUrl = 'channel.html'; // Channel File
+	</script>
+
+	<script type="text/javascript" src="/javascripts/lib/facebook.js"></script>
+	<!-- END FB LOAD API -->
+
+		<%= yield %>
+	</body>
+</html>
+

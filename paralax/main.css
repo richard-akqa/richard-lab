@@ -1,0 +1,70 @@
+@charset "UTF-8";
+/* CSS Document */
+
+/* Global Reset */
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, font, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	outline: 0;
+	font-weight: inherit;
+	font-style: inherit;
+	font-size: 100%;
+	font-family: inherit;
+	vertical-align: baseline;
+}
+
+body{
+	height:3000px;
+}
+
+#background{
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	z-index: -1;
+}
+
+#background img {
+  width: 100%;
+  min-width: 1280px;
+}
+
+#background .cloud1 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 898px;
+  height: 690px;
+}
+
+#background .cloud1 {
+  background: url(cloud1_day.png) 0 0 no-repeat;
+}
+
+#background .cloud2 {
+  position: absolute;
+  top: 25px;
+  right: 0;
+  width: 695px;
+  height: 484px;
+}
+
+#background .cloud2 {
+  background: url(cloud2_day.png) 0 0 no-repeat;
+}
+
+#video{
+	background: #FFF;
+	margin: 200px auto 0 auto;
+	width: 630px;
+}
