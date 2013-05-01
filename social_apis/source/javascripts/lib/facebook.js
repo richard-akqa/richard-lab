@@ -21,21 +21,22 @@ window.fbAsyncInit = function() {
 	FB.Event.subscribe('auth.statusChange', function(response) {
 		if (response.authResponse) 
 		{
-			//APP.onUserLogin(response);
+			APP.onUserLogin(response);
 		} 
 		else 
 		{
-			//APP.onUserLogout(response);
+			APP.onUserLogout(response);
 		}
 	});
 
-	document.getElementById('auth-loginlink').addEventListener('click', function(){
-		//FB.login();
+	document.getElementById('login-link').addEventListener('click', function(){
 
 		 FB.login(function(response) {
 			if (response.authResponse) {
 				
 				console.log('Welcome!  Fetching your information.... ');
+
+				APP.onUserLogin(response);
 				
 				FB.api('/me', function(response) {
 					console.log('Good to see you, ' + response.name + '.');
@@ -44,6 +45,7 @@ window.fbAsyncInit = function() {
 			 } else {
 
 				 console.log('User cancelled login or did not fully authorize.');
+				 APP.onUserLogout(response);
 
 			 }
 		 }, 
@@ -51,8 +53,9 @@ window.fbAsyncInit = function() {
 
 	});
 
-	document.getElementById('auth-logoutlink').addEventListener('click', function(){
+	document.getElementById('logout-link').addEventListener('click', function(){
 		FB.logout();
+		APP.onUserLogout();
 	}); 
 };
 
