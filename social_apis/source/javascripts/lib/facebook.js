@@ -49,7 +49,7 @@ window.fbAsyncInit = function() {
 
 			 }
 		 }, 
-		 {scope: 'publish_actions, user_status, user_likes, user_checkins'});
+		 {scope: 'publish_actions, user_status, user_likes, user_checkins, user_photos'});
 
 	});
 

@@ -2,9 +2,6 @@
 	<head>
 	<title>Richard Tirta's Social APIs Prototype</title>
 	<%= stylesheet_link_tag "site.css" %>
-
-	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
-	<%= javascript_include_tag "app-js" %>
 	</head>
 	<body>
 		<!-- FB LOAD API -->
@@ -19,6 +16,8 @@
 	<!-- END FB LOAD API -->
 
 		<%= yield %>
+		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+		<%= javascript_include_tag "app-js" %>
 	</body>
 </html>
 
