@@ -1,0 +1,30 @@
+@charset "utf-8";
+
+body {
+  background: #fff;
+  font-family: sans-serif; 
+}
+
+h1 {
+  font-weight: bold;
+  font-size: 32px;
+  letter-spacing: -1px;
+  text-transform: uppercase;
+  text-shadow: 0 1px 0 rgba(255, 255, 255, .5);
+}
+
+section{
+  width: 1024px;
+  margin: 10px auto 0 auto;
+}
+
+.left   {float: left}
+.right  {float: right;}
+.clear  {clear:both;}
+
+.fb-likes, .fb-checkins{
+  float: left;
+  width: 250px;
+  min-height: 300px;
+  text-align: center;
+}

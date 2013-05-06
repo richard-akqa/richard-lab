@@ -82,7 +82,7 @@ var APP = (function(){
 		function onCheckinsLoad(checkins)
 		{
 			//console.log(checkins);
-			//CHECKINS.loadCheckins(checkins);
+			CHECKINS.loadCheckins(checkins);
 
 			//LOAD LIKES & Render Visuals
 			//APP.loadLikes();
